@@ -223,3 +223,50 @@ html, body {
 .gif{
     font-size: 5px;
 }
+
+@media (max-width: 768px) {
+  .portImg {
+      height: auto;
+      max-height: 600px;
+      object-fit: cover;
+  }
+
+  .img-right {
+      width: 100%;
+      max-width: 100%;
+      float: none;
+      margin-left: 0;
+  }
+
+  .wingTitle {
+      font-size: 20px;
+  }
+
+  .wingText, .pFooter {
+      font-size: 14px;
+  }
+
+  .aboutText {
+      font-size: 18px;
+  }
+
+  .span1 {
+      font-size: 16px;
+  }
+
+  footer {
+      margin: 50px 10px;
+      padding: 10px;
+  }
+
+  li {
+      display: block;
+      margin-right: 0;
+      border-left: none;
+      padding: 5px 0;
+  }
+
+  .text2 {
+      margin-right: 0;
+  }
+}
