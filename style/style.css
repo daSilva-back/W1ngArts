@@ -1,0 +1,225 @@
+body {
+  background-color: rgba(0, 0, 0);
+}
+
+.logo {
+  height: 60px;
+}
+
+.navegador {
+  color: white;
+  margin-left: auto;
+   font-family:"msyi";
+   font-weight:bold;
+   position:fixed;
+   
+}
+
+header {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+  background: transparent;
+}
+h1 {
+  color: white;
+}
+
+.imgStyle {
+  display: flex;
+  max-width: 100%;
+  filter: blur(2px);
+  height: 100vh;
+  object-fit: cover;
+  display: block;
+}
+
+
+
+.text {
+  color: #e6eaf0;
+}
+
+.textoFoto {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-end; /* embaixo */
+  align-items: flex-start; /* esquerda */
+
+  padding: 30px;
+}
+
+
+
+
+.text2{
+    background-color:rgb(4, 7, 13);
+    margin-right:5px;
+    text-align:center;
+}
+
+.cardColor{
+  
+   background-color:rgb(2, 24, 60);
+    color:white;
+}
+
+.aboutText{
+font-family:"BebasNeue";
+display: grid;
+text-align:center;
+margin-top: 610px;
+font-size:xx-large;
+color:rgb(231, 234, 234)
+
+
+}
+
+.seta{
+    margin-bottom:500px;
+}
+
+.wingTitle{
+    font-family:"BebasNeue";
+   
+    font-size:xx-large;
+    text-align:left;
+}
+
+.wingText{
+    margin-top:30px;
+    font-family:"msyi";
+  
+    font-size:x-large;
+    text-align:left;
+    color:white;
+}
+
+.img-right{
+  float: right;
+  width: 900px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+
+.home{
+    display: flex;
+  max-width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  display: block;
+}
+
+
+@font-face {
+  font-family: "BebasNeue";
+  src: url("./fontes/BebasNeue-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "msyi";
+  src: url("./fonteS/msyi.woff2") format("woff2");
+}
+
+.underline{
+      text-decoration: underline;
+}
+
+
+.abstand{
+    margin-top:100px;
+}
+
+.span1{
+    font-size:x-large;
+    font-family:"msyi";
+    margin-top:0px;
+}
+
+footer{
+    width:100%;
+    margin-left:200px;
+    margin-bottom:200px;
+    margin-top:100px;
+      
+    
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+
+ 
+}
+
+li{
+    margin-right:100px;
+    border-left: 1px solid rgba(100, 94, 94, 0.77);
+    padding: 0 20px;
+  
+}
+
+.foot{
+    margin-top:10px;
+    font-family:"BebasNeue";
+    color:white;
+    font-size:x-large;
+   font-weight:bold;
+}
+
+li:first-child {
+  border-left: none;
+  margin-left: 0;
+  padding-left: 0;
+  margin-left:px;
+}
+
+.pFooter{
+    font-family:"msyi";
+    font-size:x-large;
+}
+
+.pFooter2{
+    font-family:"msyi";
+    font-size:medium;
+}
+html, body {
+  overflow-x: hidden;
+}
+
+.span2{
+    margin-left:20px;
+    margin-right:20px;
+}
+
+.simbolos{
+    margin-right: 10px;
+    margin-top:5px;
+     font-size: 16px; /* diminui o tamanho */
+}
+
+.a1 {
+  color: inherit;        /* tira o azul padrão */
+  text-decoration: none; /* opcional: tira o sublinhado */
+}
+
+.a2:hover {
+  color: #1a0ef8;        /* cor só ao passar o mouse */
+}
+
+.portImg{
+    margin-top:20px;
+    width:100%;
+    height: 100vh;
+}
+
+
+.gif{
+    font-size: 5px;
+}
