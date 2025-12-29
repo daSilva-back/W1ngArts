@@ -68,7 +68,7 @@ a img{
 
 .cardColor{
   
-   background-color:rgb(0, 0, 0);
+   background-color:transparent;
     color:white;
 }
 
@@ -228,10 +228,29 @@ html, body {
     font-size: 5px;
 }
 
-.hero .card {
-    border: none !important;
+.card1 {
+    border:none;
     box-shadow: none !important; /* remove qualquer sombra que pareça borda */
 }
+
+.card-img {
+    display: block;
+    width:100%;
+}
+
+.card {
+    border: none !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    background-color:transparent;
+}
+
+
 
 
 
