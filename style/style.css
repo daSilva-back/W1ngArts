@@ -31,7 +31,7 @@ h1 {
 .imgStyle {
   display: flex;
   max-width: 100%;
-  filter: blur(2px);
+  filter: blur(0.3px);
   height: 100vh;
   object-fit: cover;
   display: block;
