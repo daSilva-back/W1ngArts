@@ -9,10 +9,15 @@
       <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
       <link rel="icon" type="image/png" href="fotos/foto/favicon-32x32.png" />
+      
+
+
+</audio>
   </head>
   <body>
     <header class="navegador">
       <img class="img-fluid logo img-fluid" src="fotos/logo.png" id="logo" />
+      <audio   src="audio/musica.mp3" id ="meuAudio" controls autoplay ></audio>
 
       <nav class="nav nav-tab" id="tav-tab">
         <a class="nav-link text" href="/">HOME</a>
@@ -473,6 +478,7 @@ aq
        
       </div></div>
       <br>
+      
       <div id="foo2">
 <footer>
   <ul class="list-group list-group-horizontal ">
@@ -513,7 +519,20 @@ aq
 </footer></div>
 
     
-    
+      <script>
+document.addEventListener('DOMContentLoaded', function () {
+  const audio = document.getElementById('meuAudio');
+
+  // tira o mute depois que a página carregar
+  audio.muted = false;
+  audio.volume = 0.5;
+
+  // força o play novamente
+  audio.play().catch(() => {
+    console.log("Navegador bloqueou o som até interação do usuário");
+  });
+});
+</script>
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
