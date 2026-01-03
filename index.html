@@ -21,14 +21,12 @@
 
   <body>
     <header class="navegador">
-      <img class="img-fluid logo img-fluid" src="fotos/logo.png" id="logo" /> 
- <button id="musicBtn" class="music-btn">🎵 OFF</button>
+      <img class="img-fluid logo img-fluid" src="fotos/logo.png" id="logo" />
+      <button id="musicBtn" class="music-btn">🎵 OFF</button>
 
-<audio id="meuAudio" loop>
-  <source src="audio/musica.mp3" type="audio/mpeg">
-</audio>
-
-
+      <audio id="meuAudio" loop>
+        <source src="audio/musica.mp3" type="audio/mpeg" />
+      </audio>
 
       <nav class="nav" id="tav-tab">
         <a class="nav-link active text underline" href="/">HOME</a>
@@ -37,7 +35,6 @@
         <a class="nav-link text" href="#foo">CONTACT</a>
       </nav>
     </header>
-   
 
     <div class="card text-bg-dark card1">
       <img
@@ -89,7 +86,7 @@
             </div>
             <div class="col-4">
               <div class="img-box-sm">
-                <a href="portfolio.html#foto3">
+                <a href="portfolio.html#aq">
                   <img src="fotos/foto/index/new.jpg" class="img-fluid img1"
                 /></a>
               </div>
@@ -226,25 +223,24 @@
         </ul>
       </footer>
     </div>
-<script>
-const btn = document.getElementById("musicBtn");
-const audio = document.getElementById("meuAudio");
+    <script>
+      const btn = document.getElementById("musicBtn");
+      const audio = document.getElementById("meuAudio");
 
-let tocando = false;
+      let tocando = false;
 
-btn.addEventListener("click", () => {
-  if (!tocando) {
-    audio.volume = 0.5;
-    audio.play();
-    btn.textContent = " 🔊 ON ";
-    tocando = true;
-  } else {
-    audio.pause();
-    btn.textContent = "🎵 OFF";
-    tocando = false;
-  }
-});
-</script>
-
+      btn.addEventListener("click", () => {
+        if (!tocando) {
+          audio.volume = 0.5;
+          audio.play();
+          btn.textContent = " 🔊 ON ";
+          tocando = true;
+        } else {
+          audio.pause();
+          btn.textContent = "🎵 OFF";
+          tocando = false;
+        }
+      });
+    </script>
   </body>
 </html>
