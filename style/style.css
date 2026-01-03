@@ -365,6 +365,14 @@ audio{
   
 }
 
+img{
+  border-radius:10px;
+}
+
+.img1{
+  border-radius:1px;
+}
+
 
 
 
