@@ -12,12 +12,15 @@
       
 
 
-</audio>
   </head>
   <body>
     <header class="navegador">
       <img class="img-fluid logo img-fluid" src="fotos/logo.png" id="logo" />
-      <audio   src="audio/musica.mp3" id ="meuAudio" controls autoplay ></audio>
+      <button id="musicBtn" class="music-btn">🎵 OFF</button>
+
+<audio id="meuAudio" loop>
+  <source src="audio/musica.mp3" type="audio/mpeg">
+</audio>
 
       <nav class="nav nav-tab" id="tav-tab">
         <a class="nav-link text" href="/">HOME</a>
@@ -127,8 +130,9 @@
 
       </div>
 
-       <img id= "ursus" src="fotos/foto/index/ursus.png" class="img-fluid fotoGrande2  " alt="..." />
-
+      <div id="ursus">
+       <img  src="fotos/foto/index/ursus.png" class="img-fluid fotoGrande2  " alt="..." />
+</div>
   
 
       <div class="row row-cols-1 row-cols-md-2 g-4 mt-1">
@@ -317,11 +321,11 @@
 
        <img src="fotos/foto/portfolio/grande6.png" class="img-fluid " alt="..." />
 
-  
 
-      <div class="row row-cols-1 row-cols-md-2 g-4 fotoPequena">
+
+      <div class="row row-cols-1 row-cols-md-2 g-4 ">
  <div class="col">
-        <div class="card cardColor">
+        <div class="card ">
           <img
             src="fotos/foto/portfolio/36.jpg"
             class="card-img-top "
@@ -330,7 +334,7 @@
         </div>
       </div>
       <div class="col">
-        <div class="card cardColor">
+        <div class="card ">
           <img
             src="fotos/foto/portfolio/38.jpg"
             class="card-img-top "
@@ -340,7 +344,7 @@
       </div>
 
        <div class="col">
-        <div class="card cardColor">
+        <div class="card ">
           <img
             src="fotos/foto/portfolio/39.jpg"
             class="card-img-top "
@@ -519,18 +523,23 @@
 </footer></div>
 
     
-      <script>
-document.addEventListener('DOMContentLoaded', function () {
-  const audio = document.getElementById('meuAudio');
+<script>
+const btn = document.getElementById("musicBtn");
+const audio = document.getElementById("meuAudio");
 
-  // tira o mute depois que a página carregar
-  audio.muted = false;
-  audio.volume = 0.5;
+let tocando = false;
 
-  // força o play novamente
-  audio.play().catch(() => {
-    console.log("Navegador bloqueou o som até interação do usuário");
-  });
+btn.addEventListener("click", () => {
+  if (!tocando) {
+    audio.volume = 0.5;
+    audio.play();
+    btn.textContent = " 🔊 ON ";
+    tocando = true;
+  } else {
+    audio.pause();
+    btn.textContent = "🎵 OFF";
+    tocando = false;
+  }
 });
 </script>
     <script src="js/bootstrap.bundle.min.js"></script>

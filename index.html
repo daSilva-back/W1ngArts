@@ -22,10 +22,13 @@
   <body>
     <header class="navegador">
       <img class="img-fluid logo img-fluid" src="fotos/logo.png" id="logo" /> 
-       <audio   src="audio/musica.mp3"id ="meuAudio" controls autoplay muted>
+ <button id="musicBtn" class="music-btn">🎵 OFF</button>
 
-      
-       </audio>
+<audio id="meuAudio" loop>
+  <source src="audio/musica.mp3" type="audio/mpeg">
+</audio>
+
+
 
       <nav class="nav" id="tav-tab">
         <a class="nav-link active text underline" href="/">HOME</a>
@@ -62,7 +65,7 @@
           <div class="row mb-3">
             <div class="col-12">
               <div class="img-box-sm">
-                <a href="portfolio.html.ursus">
+                <a href="portfolio.html#ursus">
                   <img src="fotos/foto/index/ursus.png" class="img-fluid" />
                 </a>
               </div>
@@ -86,7 +89,7 @@
             </div>
             <div class="col-4">
               <div class="img-box-sm">
-                <a href="portfolio.html">
+                <a href="portfolio.html#foto3">
                   <img src="fotos/foto/index/new.jpg" class="img-fluid img1"
                 /></a>
               </div>
@@ -223,19 +226,25 @@
         </ul>
       </footer>
     </div>
-  <script>
-document.addEventListener('DOMContentLoaded', function () {
-  const audio = document.getElementById('meuAudio');
+<script>
+const btn = document.getElementById("musicBtn");
+const audio = document.getElementById("meuAudio");
 
-  // tira o mute depois que a página carregar
-  audio.muted = false;
-  audio.volume = 0.5;
+let tocando = false;
 
-  // força o play novamente
-  audio.play().catch(() => {
-    console.log("Navegador bloqueou o som até interação do usuário");
-  });
+btn.addEventListener("click", () => {
+  if (!tocando) {
+    audio.volume = 0.5;
+    audio.play();
+    btn.textContent = " 🔊 ON ";
+    tocando = true;
+  } else {
+    audio.pause();
+    btn.textContent = "🎵 OFF";
+    tocando = false;
+  }
 });
 </script>
+
   </body>
 </html>
