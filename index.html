@@ -22,17 +22,18 @@
   <body>
     <header class="navegador">
       <img class="img-fluid logo img-fluid" src="fotos/logo.png" id="logo" />
-      <button id="musicBtn" class="music-btn">🎵 OFF</button>
+     <button id="musicBtn" class="music-btn">OFF</button>
 
-      <audio id="meuAudio" loop>
-        <source src="audio/musica.mp3" type="audio/mpeg" />
-      </audio>
+<audio id="meuAudio" loop>
+  <source src="audio/musica.mp3" type="audio/mpeg">
+</audio>
 
-      <nav class="nav" id="tav-tab">
+
+      <nav class="nav " id="tav-tab">
         <a class="nav-link active text underline" href="/">HOME</a>
         <a class="nav-link text" href="/portfolio.html">PORTFOLIO</a>
 
-        <a class="nav-link text" href="#foo">CONTACT</a>
+        <a class="nav-link text" href="#contato">CONTACT</a>
       </nav>
     </header>
 
@@ -159,15 +160,15 @@
 
     <br />
 
-    <div id="foo">
+    <div id="contato">
       <footer>
         <ul class="list-group list-group-horizontal">
           <li class="list-group-item-primary"><img src="fotos/logo.png" /></li>
           <li class="list-group-item-primary foot">
             MENU
             <p class="pFooter">
-              Home <br />
-              Portfolio <br />Contact
+            <a href="index.html" class="a1 a2">Home</a><br />
+             <a href="portfolio.html" class="a1 a2">Portfolio</a><br /><a href="#contato" class=" a2 a1 "><u>Contact</u></a><br>
             </p>
           </li>
 
@@ -233,11 +234,11 @@
         if (!tocando) {
           audio.volume = 0.5;
           audio.play();
-          btn.textContent = " 🔊 ON ";
+          btn.textContent = "ON";
           tocando = true;
         } else {
           audio.pause();
-          btn.textContent = "🎵 OFF";
+          btn.textContent = "OFF";
           tocando = false;
         }
       });

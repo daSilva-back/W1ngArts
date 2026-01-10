@@ -1,17 +1,13 @@
 body {
   background-color: rgba(0, 0, 0);
 }
-
-html, body {
+html,
+body {
   overflow-x: hidden;
-}
-
-/* =================== HEADER / NAV =================== */
-
+} /* =================== HEADER / NAV =================== */
 .logo {
   height: 60px;
 }
-
 .navegador {
   color: white;
   margin-left: auto;
@@ -20,7 +16,6 @@ html, body {
   position: fixed;
   width: 100%;
 }
-
 header {
   position: absolute;
   display: flex;
@@ -29,18 +24,13 @@ header {
   justify-content: space-between;
   z-index: 10;
   background: transparent;
-}
-
-/* =================== TEXT =================== */
-
+} /* =================== TEXT =================== */
 h1 {
   color: white;
 }
-
 .text {
   color: #e6eaf0;
 }
-
 .textoFoto {
   display: flex;
   flex-direction: column;
@@ -48,13 +38,11 @@ h1 {
   align-items: flex-start;
   padding: 30px;
 }
-
 .text2 {
   background-color: rgb(0, 0, 0);
   margin-right: 5px;
   text-align: center;
 }
-
 .aboutText {
   font-family: "BebasNeue";
   display: grid;
@@ -63,18 +51,15 @@ h1 {
   font-size: xx-large;
   color: rgb(231, 234, 234);
 }
-
 .span1 {
   font-size: x-large;
   font-family: "msyi";
 }
-
 .wingTitle {
   font-family: "BebasNeue";
   font-size: xx-large;
   text-align: left;
 }
-
 .wingText {
   margin-top: 30px;
   font-family: "msyi";
@@ -82,69 +67,51 @@ h1 {
   text-align: left;
   color: white;
 }
-
 .underline {
   text-decoration: underline;
-}
-
-/* =================== IMAGES =================== */
-
+} /* =================== IMAGES =================== */
 img {
   max-width: 100%;
   height: auto;
 }
-
 .imgStyle {
   max-width: 100%;
   height: 100vh;
   object-fit: cover;
   filter: blur(0.3px);
 }
-
 .img-right {
   float: right;
   width: 900px;
   margin-left: 15px;
   margin-bottom: 10px;
 }
-
 .seta {
   margin-bottom: 500px;
 }
-
 .home {
   max-width: 100%;
   height: 100vh;
   object-fit: cover;
 }
-
-
-
 .fotoGrande {
   max-width: 100%;
   height: auto;
-  margin-top:50px;
-
+  margin-top: 50px;
 }
-
-.fotoGrande2{
-  max-width:100%;
-  height:auto;
-  margin-top:10px;
-}
-
-.pFotoGrande{
+.fotoGrande2 {
   max-width: 100%;
-  height:auto;
-  margin-top:30px;
+  height: auto;
+  margin-top: 10px;
 }
-
-.fotoPequena{
-  margin-top:30px;
+.pFotoGrande {
+  max-width: 100%;
+  height: auto;
+  margin-top: 30px;
 }
-
-/* =================== CARDS =================== */
-
+.fotoPequena {
+  margin-top: 30px;
+} /* =================== CARDS =================== */
 .card1,
 .card,
 .card-img {
@@ -152,38 +119,30 @@ img {
   box-shadow: none !important;
   background-color: transparent !important;
 }
-
 .card-img {
   width: 100%;
   display: block;
-}
-
-/* =================== FOOTER =================== */
-
+} /* =================== FOOTER =================== */
 footer {
   width: 100%;
   margin-left: 200px;
   margin-bottom: 200px;
   margin-top: 100px;
 }
-
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
 li {
   margin-right: 100px;
   border-left: 1px solid rgba(100, 94, 94, 0.77);
   padding: 0 20px;
 }
-
 li:first-child {
   border-left: none;
   padding-left: 0;
 }
-
 .foot {
   margin-top: 10px;
   font-family: "BebasNeue";
@@ -191,74 +150,51 @@ li:first-child {
   font-size: x-large;
   font-weight: bold;
 }
-
 .pFooter {
   font-family: "msyi";
   font-size: x-large;
 }
-
 .pFooter2 {
   font-family: "msyi";
   font-size: medium;
 }
-
 .span2 {
   margin-left: 20px;
   margin-right: 20px;
 }
-
 .simbolos {
   margin-right: 10px;
   margin-top: 5px;
   font-size: 16px;
 }
-
 .a1 {
   color: inherit;
   text-decoration: none;
 }
-
 .a2:hover {
   color: #1a0ef8;
-}
-
-/* =================== MISC =================== */
-
+} /* =================== MISC =================== */
 .abstand {
   margin-top: 100px;
 }
-
 .gif {
   font-size: 5px;
 }
-
 div {
   background-color: transparent;
 }
-
 .sty {
   margin-left: 50px;
-}
-
-/* =================== FONTS =================== */
-
+} /* =================== FONTS =================== */
 @font-face {
   font-family: "BebasNeue";
   src: url("./fontes/BebasNeue-Regular.woff2") format("woff2");
 }
-
 @font-face {
   font-family: "msyi";
   src: url("./fontes/msyi.woff2") format("woff2");
-}
-
-/* ===================================================
-   =============== RESPONSIVE ONLY ===================
-   =================================================== */
-
-/* TABLET */
+} /* =================================================== =============== RESPONSIVE ONLY =================== =================================================== */ /* TABLET */
 @media (max-width: 992px) {
-
   .col-8,
   .col-4,
   .col-3 {
@@ -266,119 +202,90 @@ div {
     max-width: 100%;
     flex: 0 0 100%;
   }
-
   .aboutText {
     margin-top: 300px;
     font-size: 2rem;
   }
-
   .wingTitle,
   .wingText {
     text-align: center;
   }
-
   footer {
     margin-left: 0;
     margin-bottom: 100px;
   }
-}
-
-/* MOBILE */
+} /* MOBILE */
 @media (max-width: 768px) {
-
   header {
     flex-direction: column;
     padding: 10px 0;
   }
-
   .nav {
     flex-direction: column;
     text-align: center;
   }
-
   .nav-link {
     padding: 8px 0;
     font-size: 1.1rem;
   }
-
   .aboutText {
     margin-top: 200px;
     font-size: 1.5rem;
     padding: 0 15px;
   }
-
   .span1 {
     font-size: 1rem;
     display: block;
   }
-
   .seta {
     margin-bottom: 100px;
     width: 40px;
   }
-
   .img-right {
     float: none;
     width: 100%;
     margin: 0 auto 20px;
     display: block;
   }
-
   ul {
     display: flex;
     flex-direction: column;
     text-align: center;
   }
-
   li {
     margin: 20px 0;
     border-left: none;
   }
-}
-
-/* MOBILE PEQUENO */
+} /* MOBILE PEQUENO */
 @media (max-width: 480px) {
-
   .aboutText {
     font-size: 1.3rem;
   }
-
   .wingText {
     font-size: 1rem;
   }
-
   .pFooter,
   .foot {
     font-size: 1rem;
   }
-}@media (max-width: 768px) {
+}
+@media (max-width: 768px) {
   .portImg {
     height: auto;
     max-height: 80vh;
   }
 }
-
-audio{
- max-width:100px;
-  height:20px;
-  margin-right:990px;
-  
+audio {
+  max-width: 100px;
+  height: 20px;
+  margin-right: 990px;
 }
-
-img{
-  border-radius:10px;
+img {
+  border-radius: 10px;
 }
-
-.img1{
-  border-radius:1px;
+.img1 {
+  border-radius: 1px;
 }
-
-
-
-
-
-
-
 .music-btn {
   position: fixed;
   top: 15px;
@@ -391,25 +298,19 @@ img{
   border-radius: 20px;
   cursor: pointer;
   font-size: 14px;
-  
- 
 }
-
 .music-btn:hover {
   background: white;
   color: black;
 }
-
 .img-box-sm {
   position: relative;
 }
-
 .img-box-sm a {
   position: relative;
   z-index: 10;
   display: block;
 }
-
 .img-box-sm img {
   pointer-events: auto;
 }
